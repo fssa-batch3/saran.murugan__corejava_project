@@ -29,6 +29,8 @@ class Car {
 
 	public void printStates() {
 		System.out.println(" speed:" + speed + " gear:" + gear);
+		
+		
 	}
 }
 
@@ -36,7 +38,7 @@ class Car {
  * Here's a CarDemo class that creates two separate Car objects and
  * invokes their methods:
  * 
- * @author BharathwajSoundarara
+ * @author saran
  *
  */
 public class CarDemo {

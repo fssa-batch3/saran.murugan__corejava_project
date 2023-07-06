@@ -21,9 +21,6 @@ public class TestBookComparison {
 		
 		// Each object will be Stored in a separate memory location
 		// so it will print false
-		System.out.println(movie1 == movie2);
-		
-		
-		
+		System.out.println(movie1 == movie2);		
 	}
 }
