@@ -5,9 +5,9 @@ public class UserDetails {
 		user user = new user();
 		
 		user.setUserid(01);
-		user.setUsername("aravind");
-		user.setUseremail("aravind@gmail.com");
-		user.setUserpassword("Aravind@21");
+		user.setUsername("saran");
+		user.setUseremail("saran@gmail.com");
+		user.setUserpassword("saran@21");
 		
 		System.out.println(user.getUserid());
 		System.out.println(user.getUsername());
