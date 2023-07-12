@@ -13,7 +13,7 @@ class Animal {
 }
 
 
-public class Lion extends Animal2 {  // extends keyword use to inherit variables and methods from Animal
+public class Lion extends Animal {  // extends keyword use to inherit variables and methods from Animal
 	private void roar() {
 		System.out.println("The " + getAge() + " year old lion says: Roar!");
 	}
