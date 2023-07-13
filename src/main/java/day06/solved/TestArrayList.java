@@ -9,13 +9,13 @@ public class TestArrayList {
     public static void main(String[] args) {
      
         // Store the city names in the List
-        ArrayList cityList  = new ArrayList();
+        ArrayList<String> cityList  = new ArrayList();
         cityList.add("Chennai");
         cityList.add("Bangalore");
         cityList.add("Mumbai");
          
         // Display the city names
-        for (Object object : cityList) {
+        for (String object : cityList) {
             String cityName = (String) object; // TypeCast object to String
             System.out.println(cityName);           
         }
