@@ -20,10 +20,10 @@ public static void main(String[] args) {
 		// Sample Inputs
 
 		// HR,Ram
-		// HR, Suresh
-		// IT, Basker
-		// IT, Joseph
-		// Admin, Sundar
+		// HR,Suresh
+		// IT,Basker
+		// IT,Joseph
+		// Admin,Sundar
 
 		String s = sc.nextLine();
 
@@ -59,7 +59,7 @@ public static void main(String[] args) {
 		count++;
 	}
 
-	System.out.println(countMap.keySet());
+
 
 	for (String n : countMap.keySet()) {
 
