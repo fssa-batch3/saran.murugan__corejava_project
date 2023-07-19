@@ -1,13 +1,14 @@
-package day06.practice;
+package day07.practice;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+
+import day06.practice.RemoveDuplicate;
 
 public class TestRemoveDuplicates {
-
 
 //  for valid groundLocationLink
 	@Test
@@ -34,14 +35,13 @@ public class TestRemoveDuplicates {
 	}
 
 	@Test
-
 	public void testInValidarray() {
 
-		List<String> cityList = new ArrayList<String>();
-		cityList.add("Chennai");
-		cityList.add("Bangalore");
-		cityList.add("Mumbai");
-		cityList.add("Mumbai");
+//		List<String> cityList = new ArrayList<String>();
+//		cityList.add("Chennai");
+//		cityList.add("Bangalore");
+//		cityList.add("Mumbai");
+//		cityList.add("Mumbai");
 //
 //		try {
 //
@@ -52,16 +52,15 @@ public class TestRemoveDuplicates {
 //			Assertions.assertEquals("Array contains duplicate element", ex.getMessage());
 //
 //		}
-		List<String> cityList2 = new ArrayList<String>();
+//		List<String> cityList2 = new ArrayList<String>();
 		try {
-
-			List<String> actualUniqueCityList = RemoveDuplicate.removeDuplicate(cityList2);
-			Assertions.fail("testInValidarray failed");
-		} catch (IllegalArgumentException ex) {
-
-			Assertions.assertEquals("Array cannot be empty", ex.getMessage());
-
+			RemoveDuplicate.removeDuplicate(null);
+			Assertions.fail("Validatepriority failed");
+		} catch (Exception ex) {
+			Assertions.assertEquals("Array cannot be null", ex.getMessage());
 		}
+
+	
 		
 
 	}

@@ -58,7 +58,7 @@ public class TaskDuplicateTest {
 			Assertions.assertEquals("Task date cannot be null", ex.getMessage());
 		}
 		 LocalDate currentDate = LocalDate.now();
-	        LocalDate lastDate = currentDate.minusDays(7);
+	     LocalDate lastDate = currentDate.minusDays(7);
 	        
 	    	try {
 				TaskDuplicate.validateTaskDate(lastDate);
