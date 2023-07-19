@@ -6,7 +6,24 @@ import java.util.regex.Pattern;
 
 public class Task {
 	public String taskName;
+	public String getTaskName() {
+		return taskName;
+	}
 
+
+	public void setTaskName(String taskName) {
+		this.taskName = taskName;
+	}
+
+
+	public int getPriority() {
+		return priority;
+	}
+
+
+	public void setPriority(int priority) {
+		this.priority = priority;
+	}
 	public int priority;
 
 	public Task(String taskName, int priority) {
@@ -17,6 +34,11 @@ public class Task {
 	}
 	
 	
+	public Task() {
+		// TODO Auto-generated constructor stub
+	}
+
+
 	public static boolean  validatetaskName (String taskName)throws IllegalArgumentException {
 		if(taskName==null || taskName.isEmpty()) {
 			throw new IllegalArgumentException("TaskName cannot be null or empty");
@@ -55,11 +77,11 @@ public class Task {
 		for (Task task : taskList) {
 			System.out.println("TaskName " + task.taskName);
 			System.out.println("Taskpriority " + task.priority);
-
 			System.out.println();
 
 		}
-	}
-  
 
-}
+
+
+	}
+	}
