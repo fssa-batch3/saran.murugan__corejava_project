@@ -1,5 +1,7 @@
 package day04.solved;
 
+import day04.practice.Polygon2;
+
 public class Rectangle extends Polygon2 {
 	
 	protected double length;
@@ -14,7 +16,6 @@ public class Rectangle extends Polygon2 {
 		this.breadth = breadth;
 	}
 
-	@Override
 	public double calculateArea() {
 		// TODO Auto-generated method stub
 		return this.length * this.breadth;
@@ -22,6 +23,12 @@ public class Rectangle extends Polygon2 {
 	
 	public int getNumberOfSides() {
 		return super.numberOfSides;
+	}
+
+	@Override
+	public double calculateCircumference() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 }

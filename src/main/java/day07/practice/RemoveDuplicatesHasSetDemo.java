@@ -1,14 +1,12 @@
 package day07.practice;
 
 import java.util.*;
-
 /*
  * Question#1: Create an ArrayList<Integer> of numbers with duplicate entries.
  *  Use an HashSet<Integer> to remove the duplicates and display the Unique values
  */
-public class RemoveDuplicate {
-	public static void main(String[] args) throws Exception {
-
+public class RemoveDuplicatesHasSetDemo {
+	public static void main(String[] args)  {
 
 		ArrayList<Integer> arr = new ArrayList<Integer>();
 		arr.add(1);
@@ -18,13 +16,13 @@ public class RemoveDuplicate {
 		arr.add(5);
 		arr.add(7);
 		arr.add(7);
-		removeDuplicate(arr);
+		removeDuplicateElements(arr);
 
 	}
 
-	public static void removeDuplicate(ArrayList<Integer> numbers) throws Exception {
+	public static void removeDuplicateElements(ArrayList<Integer> numbers) throws IllegalArgumentException {
 		if (numbers == null) {
-			throw new Exception("Array cannot be null");
+			throw new IllegalArgumentException("Array cannot be null");
 		}
 		// Set stores unique elements and ignores duplication
 		HashSet<Integer> uniqueArr = new HashSet<Integer>(numbers);
@@ -47,7 +45,6 @@ public class RemoveDuplicate {
 		}
 		return true;
 
-	  }
-
 	}
 
+}
